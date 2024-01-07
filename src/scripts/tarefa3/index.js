@@ -40,4 +40,14 @@ const calculateAverageRating = (bookList, bookId) => {
   return `O livro ${book.title} possui uma média de avaliação igual a ${averageRating}.`;
 };
 
+const booksInCategory = findBooksByCategory(bookStoreBooks, 'aventura');
+console.log(booksInCategory);
 
+const bookInfo = findBookById(bookStoreBooks, 2);
+console.log(bookInfo);
+
+const saleResult = sellBook(bookStoreBooks, 2, 'gold');
+console.log(saleResult);
+
+const averageRatingResult = calculateAverageRating(bookStoreBooks, 2);
+console.log(averageRatingResult);
